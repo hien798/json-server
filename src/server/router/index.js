@@ -90,7 +90,5 @@ module.exports = (db, opts) => {
     res.status(500).send(err.stack)
   })
 
-  router.post('/hahaha')
-
   return router
 }
