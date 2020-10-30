@@ -4,6 +4,10 @@ app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
 
+app.get("/", (req, res, next) => {
+    res.json({ "Hello": "EveryBody" });
+});
+
 app.get("/app", (req, res, next) => {
     res.json({ "an": "hien" });
 });
